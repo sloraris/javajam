@@ -2,21 +2,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-:root {
-    --main-bg-color: #2c354a;
-  }
-  
-
 
 /* MAIN PAGE STYLING */
 body {
-    background-color: #242832;
+    background-color: #FCEBB6;
     color: #221811;
     font-family: "Ubuntu", Arial, Helvetica, sans-serif;
 }
 
 header {
-    background-color: var(--main-bg-color);
+    background-color: #D2B48C;
     color: #8C3826;
     text-align: center;
 }
