@@ -5,35 +5,74 @@
 
 /* MAIN PAGE STYLING */
 body {
-    background-color: #FCEBB6;
-    color: #221811;
-    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+    background-image: url('images/fadedroad50.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
     background-color: #D2B48C;
     color: #8C3826;
     text-align: center;
+    margin: 5px 0;
 }
 
 nav {
     text-align: center;
     font-weight: bold;
+    font-size: 1.5em;
+    padding: 5px 0;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+main {
+    padding: 0 2em 2em;
+}
+
+img {
+    border-style: none;
+    max-width: 100%;
+    height: auto;
 }
 
 h1 {
-    line-height: 200%;
+    font-size: 3em;
 }
 
 h2 {
     color: #8C3826;
 }
 
+h3 {
+    color: #8C3826;
+}
+
+h4 {
+    background-color: #D2B48C;
+    font-size: 1.2em;
+    padding-left: 0.5em;
+    padding-bottom: .25em;
+}
+
+dt {
+    color: #8C3826;
+}
+
 footer {
-    background-color: var(--main-bg-color);
+    background-color: #D2B48C;
     font-size: .60em;
     font-style: italic;
     text-align: center;
+    padding: 1em;
+    border-top: 2px solid #8C3826;
+}
+
+.details {
+    padding: 0 20%;
 }
 
 #wrapper {
@@ -41,4 +80,14 @@ footer {
     background-color: #FEFAEB;
     margin-right: auto;
     margin-left: auto;
+    min-width: 900px;
+    max-width: 1280px;
+    box-shadow: 5px 5px 5px;
+}
+
+#homehero {
+    height: 300px;
+    background-image: url('images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
