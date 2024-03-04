@@ -4,18 +4,51 @@
 
 
 /* MAIN PAGE STYLING */
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-image: url('images/fadedroad50.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-color: #FCEBB6;
+	background-image: url(images/fadedroad50.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #221811;
+	font-family: Tahoma, Arial, sans-serif;
+
+}
+
+#wrapper {
+	background-color: #231814;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	min-width: 900px;
+	max-width: 1280px;
+	box-shadow: 3px 3px 3px #676767;
+	padding: 0;
 }
 
 header {
-    background-color: #D2B48C;
-    color: #8C3826;
-    text-align: center;
-    margin: 5px 0;
+	background-color: #D2B48C;
+	background-image: url(images/coffeelogo.jpg);
+	background-repeat: no-repeat;
+	color: #231814;
+	padding-left: 240px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+header:link,
+header:visited {
+    text-decoration: none;
+    color: #231814;
+}
+
+header:hover {
+    text-decoration: none;
+    color: #FEF6C2;
 }
 
 nav {
@@ -23,15 +56,51 @@ nav {
     font-weight: bold;
     font-size: 1.5em;
     padding: 5px 0;
+    float: left;
+    width: 200px;
 }
 
 nav a {
     text-decoration: none;
 }
 
-main {
-    padding: 0 2em 2em;
+nav a:link {
+    color: #FEF6C2;
 }
+
+nav a:visited {
+    color: #D2B48C
+}
+
+nav a:hover {
+    color: #CC9933;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+main {
+    display: block;
+    padding: 0 0 2em 0;
+    margin-left: 200px;
+    background-color: #FEF6C2;
+    overflow: auto;
+}
+
+main h2,
+main h3,
+main h4,
+main p,
+main div,
+main ul,
+main dl {
+  padding-left: 3em;
+  padding-right: 2em;
+}
+
 
 img {
     border-style: none;
@@ -41,6 +110,7 @@ img {
 
 h1 {
     font-size: 3em;
+    padding: 0 2em 0 3em;
 }
 
 h2 {
@@ -54,12 +124,16 @@ h3 {
 h4 {
     background-color: #D2B48C;
     font-size: 1.2em;
+    text-transform: uppercase;
     padding-left: 0.5em;
-    padding-bottom: .25em;
+    padding-bottom: 0;
+    border-bottom: solid;
+    clear: left;
 }
 
 dt {
     color: #8C3826;
+    overflow: auto;
 }
 
 footer {
@@ -75,19 +149,34 @@ footer {
     padding: 0 20%;
 }
 
-#wrapper {
-    width: 80%;
-    background-color: #FEFAEB;
-    margin-right: auto;
-    margin-left: auto;
-    min-width: 900px;
-    max-width: 1280px;
-    box-shadow: 5px 5px 5px;
+.floatleft {
+    float: left;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+.onethird {
+    float: left;
+    width: 33%;
 }
 
 #homehero {
     height: 300px;
     background-image: url('images/hero.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+}
+
+#heromugs {
+    height: 300px;
+    background-image: url('images/heromugs.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#heroguitar {
+    height: 300px;
+    background-image: url('images/heroguitar.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
